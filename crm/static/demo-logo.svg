@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="96" viewBox="0 0 320 96" role="img" aria-labelledby="title desc">
+  <title id="title">FieldOps Demo logo</title>
+  <desc id="desc">Neutral placeholder logo for the GitHub-safe demo.</desc>
+  <rect width="320" height="96" rx="20" fill="#113355"/>
+  <rect x="18" y="18" width="60" height="60" rx="14" fill="#f7b955"/>
+  <path d="M34 49h28" stroke="#113355" stroke-width="8" stroke-linecap="round"/>
+  <path d="M48 35v28" stroke="#113355" stroke-width="8" stroke-linecap="round"/>
+  <text x="96" y="42" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">FieldOps</text>
+  <text x="96" y="70" fill="#d9e6f2" font-family="Arial, Helvetica, sans-serif" font-size="18">Demo</text>
+</svg>

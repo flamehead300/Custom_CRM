@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In - FieldOps Demo CRM</title>
+  <link rel="stylesheet" href="/static/login.css" />
+</head>
+<body>
+  <div class="card">
+    <div class="logo">
+      <h1><span>FieldOps Demo</span> CRM</h1>
+      <p>Sign in to your workspace</p>
+    </div>
+
+    <div class="error{% if show_error %} show{% endif %}" id="err">Invalid username or password.</div>
+
+    <form method="POST" action="">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" autocomplete="username" required autofocus />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" autocomplete="current-password" required />
+
+      <button type="submit" class="btn">Sign In</button>
+    </form>
+  </div>
+
+  <script>
+    // Show error banner if redirected back with ?error=1
+    if (new URLSearchParams(location.search).get('error') === '1') {
+      document.getElementById('err').classList.add('show');
+    }
+    // Preserve ?next= when the form submits
+    const next = new URLSearchParams(location.search).get('next');
+    if (next) {
+      const form = document.querySelector('form');
+      form.action = '/login?next=' + encodeURIComponent(next);
+    }
+  </script>
+</body>
+</html>

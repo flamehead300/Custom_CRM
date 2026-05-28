@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <title>Estimate Request | FieldOps Demo</title>
+    <meta name="description"
+        content="Build your free estimate for window cleaning, pressure washing, and exterior care from Kenosha to Waukesha, including Milwaukee, with clear, honest pricing." />
+    <link rel="canonical" href="https://example.invalid/estimate/" />
+    <meta property="og:title" content="Estimate Request | FieldOps Demo" />
+    <meta property="og:description"
+        content="Build your free estimate for window cleaning, pressure washing, and exterior care with honest, straightforward pricing." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.invalid/estimate/" />
+    <meta property="og:image" content="https://example.invalid/assets/demo-logo.svg" />
+    <link rel="icon" href="../assets/demo-favicon.svg" />
+	<link rel="stylesheet" href="../css/style.css?v=6" />
+    <link rel="stylesheet" href="../css/estimate-request.css" />
+    <link rel="stylesheet" href="../css/modal-estimate.css?v=2" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://example.invalid/#business",
+      "name": "FieldOps Demo",
+      "description": "Professional, affordable window cleaning and exterior cleaning for residential and commercial properties across Milwaukee and surrounding areas.",
+      "url": "https://example.invalid",
+      "telephone": "+15550100000",
+      "email": "hello@example.invalid",
+      "image": "https://example.invalid/assets/demo-logo.svg",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Franklin",
+        "addressRegion": "WI",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "08:00",
+        "closes": "20:00"
+      }],
+      "areaServed": [
+        { "@type": "City", "name": "Milwaukee" },
+        { "@type": "City", "name": "Franklin" },
+        { "@type": "City", "name": "Oak Creek" },
+        { "@type": "City", "name": "Greenfield" },
+        { "@type": "City", "name": "Greendale" },
+        { "@type": "City", "name": "Hales Corners" },
+        { "@type": "City", "name": "West Allis" },
+        { "@type": "City", "name": "Wauwatosa" },
+        { "@type": "City", "name": "Brookfield" },
+        { "@type": "City", "name": "Waukesha" },
+        { "@type": "City", "name": "New Berlin" },
+        { "@type": "City", "name": "Muskego" },
+        { "@type": "City", "name": "Kenosha" },
+        { "@type": "City", "name": "Racine" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Window Cleaning and Exterior Cleaning Services",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Residential Window Cleaning Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "name": "Residential Window Cleaning",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Residential Window Cleaning",
+                  "provider": { "@id": "https://example.invalid/#business" }
+                },
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "priceCurrency": "USD",
+                  "unitCode": "ANN"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Commercial Window Cleaning Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "name": "Ground-Level Storefront Window Cleaning",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Ground-Level Storefront Window Cleaning",
+                  "provider": { "@id": "https://example.invalid/#business" }
+                },
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "priceCurrency": "USD",
+                  "unitCode": "MON"
+                }
+              },
+              {
+                "@type": "Offer",
+                "name": "Low-Rise Commercial Window Cleaning",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Low-Rise Commercial Window Cleaning",
+                  "provider": { "@id": "https://example.invalid/#business" }
+                },
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "priceCurrency": "USD",
+                  "unitCode": "ANN"
+                }
+              },
+              {
+                "@type": "Offer",
+                "name": "High-Access Commercial Window Cleaning",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "High-Access Commercial Window Cleaning",
+                  "provider": { "@id": "https://example.invalid/#business" }
+                },
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "priceCurrency": "USD",
+                  "unitCode": "HUR"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Exterior Cleaning Add-On Services",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gutter Cleaning" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pressure Washing" } }
+            ]
+          }
+        ]
+      }
+    }
+    </script>
+</head>
+
+<body id="top" class="estimate-request-page has-mobile-contact">
+    <a href="#estimate-request" class="skip-link">Skip to main content</a>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="#top">
+                <img src="../assets/demo-logo.svg" alt="FieldOps Demo logo">
+                <div>
+                    <span class="brand-subtitle">Affordable, Professional Window Cleaning</span>
+                </div>
+            </a>
+            <div class="header-cta" aria-label="Fast contact actions">
+                <a class="btn btn-primary" href="#estimate-request">Get a Free Instant Estimate</a>
+                <a class="btn btn-secondary" href="tel:+15550100000">Call or Text (555) 010-0000</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="nav-bar">
+        <div class="container">
+            <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+                <span class="nav-toggle-label">Menu</span>
+                <span class="nav-toggle-lines" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+            <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+                <a href="#top">Home</a>
+                <a href="#estimate-request">Residential</a>
+                <a href="#commercial-pricing">Commercial</a>
+                <a href="#estimate-request">Pressure Washing</a>
+                <a href="#estimate-request" class="active">Estimate</a>
+                <a href="#demo-contact">About</a>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+            <section class="hero section">
+                <h1>Get a Free Instant Estimate for <span>Window Cleaning and Exterior Cleaning</span></h1>
+            </section>
+
+
+            <section id="estimate-request" class="section">
+                <div class="contact-intro estimate-intro">
+                    <h2>Build Your Instant Estimate</h2>
+                </div>
+
+                <div id="estimate-request-shell" class="estimate-request-shell">
+                    <form id="estimate-request-form" class="form-ms estimate-request-main" method="post" novalidate>
+                        <section class="estimate-panel" aria-labelledby="estimate-step-property">
+                            <div class="estimate-stage-heading">
+                                <span class="estimate-kicker">Step 1</span>
+                                <h3 id="estimate-step-property" class="step-title">Choose your property type</h3>
+                                <p class="step-subtitle">Start with home or business so the right service details appear.</p>
+                            </div>
+
+                            <div class="estimate-services-layout">
+                                <div class="estimate-services-property">
+                                    <div class="detail-card estimate-property-card">
+                                        <h3 class="detail-title-with-info">Property type
+                                            <button type="button" class="info-trigger" aria-label="Property type help" aria-expanded="false" data-info-text="Residential: homes, condos, townhouses. Commercial: storefronts, offices, facilities.">?</button>
+                                        </h3>
+                                        <div class="estimate-type-toggle" role="radiogroup" aria-label="Property type">
+                                            <label class="check-item">
+                                                <input type="radio" id="property_type_res" name="property_type"
+                                                    value="res" aria-label="Residential" checked />
+                                                <span>
+                                                    <strong>Residential</strong>
+                                                </span>
+                                            </label>
+                                            <label class="check-item">
+                                                <input type="radio" id="property_type_com" name="property_type"
+                                                    value="com" aria-label="Commercial" />
+                                                <span>
+                                                    <strong>Commercial</strong>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="estimate-services-main">
+                                    <div class="estimate-flow-heading">
+                                        <span class="estimate-kicker">Step 2</span>
+                                        <h3>Choose services
+                                            <button type="button" class="info-trigger" aria-label="Service selection help" aria-expanded="false" data-info-text="Pick only what you need. You can select multiple services or choose Need review.">?</button>
+                                        </h3>
+                                    </div>
+                                    <fieldset class="services-fieldset">
+                                        <legend class="sr-only">Services</legend>
+                                        <div class="service-grid">
+                                            <label class="check-item service-card" for="service_windows">
+                                                <input type="checkbox" id="service_windows" name="services"
+                                                    value="windows" aria-label="Window cleaning"
+                                                    aria-controls="window-details-panel" aria-expanded="false" />
+                                                <span class="service-card-content">
+                                                    <span class="service-card-head">
+                                                        <span>
+                                                            <span class="service-card-title-wrap">
+                                                                <span id="service_windows_title"
+                                                                    class="service-card-title">Window cleaning</span>
+                                                                <span role="button" tabindex="0" class="info-trigger" aria-label="Window cleaning help" aria-expanded="false" data-service-info="windows" data-info-text="Choose glass, screens, and tracks here. Upload photos for stains, debris, skylights, or access questions.">?</span>
+                                                            </span>
+                                                            <span id="service_windows_meta"
+                                                                class="service-card-meta">$8–$15 per window — upload photos for anything unusual.</span>
+                                                        </span>
+                                                        <span id="service_windows_price"
+                                                            class="service-card-price">$0.00</span>
+                                                    </span>
+                                                    <span id="service_windows_detail"
+                                                        class="service-card-detail">Streak-free, spotless glass. Easily add
+                                                        screens and tracks. Upload photos for stains, debris, skylights,
+                                                        or access questions.</span>
+                                                </span>
+                                            </label>
+
+                                            <label class="check-item service-card" for="service_pressure">
+                                                <input type="checkbox" id="service_pressure" name="services"
+                                                    value="pressure" aria-label="Pressure washing"
+                                                    aria-controls="pressure-details-panel" aria-expanded="false" />
+                                                <span class="service-card-content">
+                                                    <span class="service-card-head">
+                                                        <span>
+                                                            <span class="service-card-title-wrap">
+                                                                <span id="service_pressure_title"
+                                                                    class="service-card-title">Pressure washing</span>
+                                                                <span role="button" tabindex="0" class="info-trigger" aria-label="Pressure washing help" aria-expanded="false" data-service-info="pressure" data-info-text="Siding, patios, and walkways. Priced by walls and floors.">?</span>
+                                                            </span>
+                                                            <span id="service_pressure_meta"
+                                                                class="service-card-meta">$75 per wall per floor — most single-story homes are 4 walls.</span>
+                                                        </span>
+                                                        <span id="service_pressure_price"
+                                                            class="service-card-price">$0.00</span>
+                                                    </span>
+                                                    <span id="service_pressure_detail" class="service-card-detail">Perfect
+                                                        for siding, patios, and walkways that have lost their shine. We'll
+                                                        wash away the grime safely and effectively.</span>
+                                                </span>
+                                            </label>
+
+                                            <label class="check-item service-card" for="service_gutter">
+                                                <input type="checkbox" id="service_gutter" name="services"
+                                                    value="gutter" aria-label="Gutter cleaning"
+                                                    aria-controls="gutter-details-panel" aria-expanded="false" />
+                                                <span class="service-card-content">
+                                                    <span class="service-card-head">
+                                                        <span>
+                                                            <span class="service-card-title-wrap">
+                                                                <span id="service_gutter_title"
+                                                                    class="service-card-title">Gutter cleaning</span>
+                                                                <span role="button" tabindex="0" class="info-trigger" aria-label="Gutter cleaning help" aria-expanded="false" data-service-info="gutter" data-info-text="Clears debris to protect the roofline and foundation.">?</span>
+                                                            </span>
+                                                            <span id="service_gutter_meta" class="service-card-meta">$50 per run per floor — most homes have 4 runs.</span>
+                                                        </span>
+                                                        <span id="service_gutter_price"
+                                                            class="service-card-price">$0.00</span>
+                                                    </span>
+                                                    <span id="service_gutter_detail" class="service-card-detail">Protect
+                                                        your foundation and roofline. We'll clear out the debris so
+                                                        everything flows exactly how it should.</span>
+                                                </span>
+                                            </label>
+
+                                            <label class="check-item service-card" for="service_caulk">
+                                                <input type="checkbox" id="service_caulk" name="services"
+                                                    value="caulk" aria-label="Caulking / sealing"
+                                                    aria-controls="caulk-details-panel" aria-expanded="false" />
+                                                <span class="service-card-content">
+                                                    <span class="service-card-head">
+                                                        <span>
+                                                            <span class="service-card-title-wrap">
+                                                                <span id="service_caulk_title"
+                                                                    class="service-card-title">Caulking / sealing</span>
+                                                                <span role="button" tabindex="0" class="info-trigger" aria-label="Caulking and sealing help" aria-expanded="false" data-service-info="caulk" data-info-text="Weatherproofing and fresh seals. We review scope and access before pricing.">?</span>
+                                                            </span>
+                                                            <span id="service_caulk_meta" class="service-card-meta">Custom
+                                                                priced after review.</span>
+                                                        </span>
+                                                        <span id="service_caulk_price"
+                                                            class="service-card-price">Quoted</span>
+                                                    </span>
+                                                    <span id="service_caulk_detail" class="service-card-detail">Need some
+                                                        weatherproofing or a fresh seal? Add this to the list, and we'll
+                                                        take a close look when we review your project.</span>
+                                                </span>
+                                            </label>
+
+                                            <label class="check-item service-card" for="service_review">
+                                                <input type="checkbox" id="service_review" name="services"
+                                                    value="review" aria-label="Not sure / Need review"
+                                                    aria-controls="review-request-panel" aria-expanded="false" />
+                                                <span class="service-card-content">
+                                                    <span class="service-card-head">
+                                                        <span>
+                                                            <span class="service-card-title-wrap">
+                                                                <span id="service_review_title"
+                                                                    class="service-card-title">Not sure / Need review</span>
+                                                                <span role="button" tabindex="0" class="info-trigger" aria-label="Need review help" aria-expanded="false" data-service-info="review" data-info-text="Upload photos or describe the issue, and we will recommend the best service path.">?</span>
+                                                            </span>
+                                                            <span id="service_review_meta" class="service-card-meta">Manual recommendation after review.</span>
+                                                        </span>
+                                                        <span id="service_review_price"
+                                                            class="service-card-price">Review</span>
+                                                    </span>
+                                                    <span id="service_review_detail" class="service-card-detail">Use this if you want us to recommend the best service path after seeing the property details and photos.</span>
+                                                </span>
+                                            </label>
+                                        </div>
+
+                                        <span id="service-group-error" class="group-error" role="alert" aria-live="assertive"></span>
+                                    </fieldset>
+                                </div>
+
+                                <div class="estimate-services-detail">
+                                    <div class="estimate-flow-heading estimate-flow-heading--details">
+                                        <span class="estimate-kicker">Step 3</span>
+                                        <h3>Property Details</h3>
+                                        <p>Only the details for your selected services appear below.</p>
+                                    </div>
+                                    <div id="service-detail-empty" class="service-detail-empty">
+                                        <strong>Service details appear here</strong>
+                                        <span>Select a service above to open the matching pricing inputs and scope
+                                            options in this panel.</span>
+                                    </div>
+
+                                    <div class="service-detail-stack">
+
+                                        <div id="commercial-general-panel" class="detail-card commercial-only" hidden>
+                                            <h3>Commercial lead details</h3>
+                                            <p>These shared fields help us understand the property and logistics before reviewing each selected service.</p>
+                                            <div class="detail-grid commercial-field-grid">
+                                                <div class="form-field">
+                                                    <label class="form-label" for="commercial_property_use_type">Property use type <span class="req">*</span></label>
+                                                    <select id="commercial_property_use_type" class="form-input" aria-describedby="error_commercial_property_use_type">
+                                                        <option value="">Select one</option>
+                                                        <option value="storefront_retail">Storefront / Retail</option>
+                                                        <option value="restaurant_bar">Restaurant / Bar</option>
+                                                        <option value="office">Office</option>
+                                                        <option value="medical_clinic">Medical / Clinic</option>
+                                                        <option value="bank_financial">Bank / Financial</option>
+                                                        <option value="school_church_institutional">School / Church / Institutional</option>
+                                                        <option value="warehouse_industrial">Warehouse / Industrial</option>
+                                                        <option value="apartment_condo_common_areas">Apartment / Condo Common Areas</option>
+                                                        <option value="other_commercial_facility">Other Commercial Facility</option>
+                                                    </select>
+                                                    <span id="error_commercial_property_use_type" class="field-error" data-error-for="commercial_property_use_type" hidden>Please choose the property use type.</span>
+                                                </div>
+                                                <div class="form-field">
+                                                    <label class="form-label" for="commercial_preferred_service_time">Preferred service timing</label>
+                                                    <select id="commercial_preferred_service_time" class="form-input">
+                                                        <option value="">No preference</option>
+                                                        <option value="before_open">Before opening</option>
+                                                        <option value="midday">Midday</option>
+                                                        <option value="after_close">After closing</option>
+                                                        <option value="asap">As soon as possible</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-field">
+                                                <label class="form-label" for="commercial_operating_constraints">Traffic or operating-hours constraints</label>
+                                                <textarea id="commercial_operating_constraints" class="form-input" rows="3" placeholder="Share any tenant traffic, opening hours, public-facing timing, or loading dock restrictions."></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div id="commercial-scope-panel" class="detail-card commercial-only" hidden>
+                                            <h3>Commercial window project type</h3>
+                                            <p>Select the closest match so we can price by scale, access, and service frequency.</p>
+                                            <fieldset class="commercial-scope-fieldset">
+                                                <legend>Commercial scope</legend>
+                                                <div class="commercial-scope-grid" role="radiogroup" aria-label="Commercial scope">
+                                                    <label class="estimate-package-option commercial-scope-option" for="commercial_scope_storefront">
+                                                        <input type="radio" id="commercial_scope_storefront" name="commercial_scope" value="storefront" checked />
+                                                        <span class="estimate-package-card">
+                                                            <span class="estimate-package-title">Ground-Level Storefront</span>
+                                                            <span class="estimate-package-summary">Best for retail glass, restaurants, offices, and recurring route work.</span>
+                                                        </span>
+                                                    </label>
+                                                    <label class="estimate-package-option commercial-scope-option" for="commercial_scope_low_rise">
+                                                        <input type="radio" id="commercial_scope_low_rise" name="commercial_scope" value="low_rise" />
+                                                        <span class="estimate-package-card">
+                                                            <span class="estimate-package-title">Low-Rise Office / Facility, 1-3 Stories</span>
+                                                            <span class="estimate-package-summary">Water-fed pole access, larger glass areas, or facility scheduling.</span>
+                                                        </span>
+                                                    </label>
+                                                    <label class="estimate-package-option commercial-scope-option" for="commercial_scope_mid_high_rise">
+                                                        <input type="radio" id="commercial_scope_mid_high_rise" name="commercial_scope" value="mid_high_rise" />
+                                                        <span class="estimate-package-card">
+                                                            <span class="estimate-package-title">Mid / High-Rise Facility</span>
+                                                            <span class="estimate-package-summary">Lift, roof, rope, anchor, or high-access safety review required.</span>
+                                                        </span>
+                                                    </label>
+                                                    <label class="estimate-package-option commercial-scope-option" for="commercial_scope_post_construction">
+                                                        <input type="radio" id="commercial_scope_post_construction" name="commercial_scope" value="post_construction" />
+                                                        <span class="estimate-package-card">
+                                                            <span class="estimate-package-title">Post-Construction Glass Cleanup</span>
+                                                            <span class="estimate-package-summary">Paint, dust, stickers, debris, or restoration-level glass cleaning.</span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </fieldset>
+                                            <span id="commercial-scope-error" class="group-error" role="alert" aria-live="assertive"></span>
+                                        </div>
+
+                                        <div id="job-details-panel" class="detail-card" hidden>
+                                            <h3>Property details</h3>
+                                            <p>These details fine-tune pricing for window cleaning, pressure washing,
+                                                and gutter service.</p>
+                                            <div class="detail-grid">
+                                                <div class="form-field">
+                                                    <span class="label-with-info">
+                                                        <label class="form-label" for="floors">Floors</label>
+                                                        <button type="button" class="info-trigger" aria-label="Floors help" aria-expanded="false" data-info-text="Use the highest level we need to access from the ground.">?</button>
+                                                    </span>
+                                                    <select id="floors" class="form-input">
+                                                        <option value="1" selected>1 floor</option>
+                                                        <option value="2">2 floors</option>
+                                                        <option value="3">3 floors</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-field">
+                                                    <label class="form-label" for="frequency">Visit timing</label>
+                                                    <select id="frequency" class="form-input">
+                                                        <option value="one_time" selected>One-time service</option>
+                                                        <option value="quarterly">Quarterly Residential Maintenance - 10% off</option>
+                                                        <option value="monthly">Monthly Storefront Buffing - 15% off</option>
+                                                    </select>
+                                                    <p style="margin-top:8px;font-size:0.85rem;color:#64748b;">One-time is the default. Turn on Subscribe &amp; Save to compare recurring maintenance pricing without signing a contract.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="window-details-panel" class="detail-card" hidden>
+                                            <h3 class="detail-title-with-info"><span id="window-details-title">Residential window details</span>
+                                                <button type="button" class="info-trigger" aria-label="Window detail help" aria-expanded="false" data-info-text="Add counts only for window cleaning. Screens and tracks stay synced for Signature and Deluxe unless you edit them.">?</button>
+                                            </h3>
+                                            <p id="window-details-copy">Tell us how much glass needs attention and what condition it is in so we can build pricing for brighter, cleaner windows.</p>
+
+                                            <fieldset id="residential-package-fieldset" class="estimate-package-fieldset">
+                                                <legend>Care level</legend>
+                                                <div class="estimate-package-grid estimate-package-grid--res" role="radiogroup" aria-label="Residential window cleaning care level">
+                                                    <label class="estimate-package-option" for="package_essential">
+                                                        <input type="radio" id="package_essential" name="package_level_res" value="essential" />
+                                                        <span class="estimate-package-card">
+                                                            <span class="estimate-package-title">The Essential Clean</span>
+                                                            <span class="estimate-package-summary">Exterior-only glass. No screens or tracks by default.</span>
+                                                        </span>
+                                                    </label>
+                                                    <label class="estimate-package-option is-featured" for="package_signature">
+                                                        <input type="radio" id="package_signature" name="package_level_res" value="signature" checked />
+                                                        <span class="estimate-package-card">
+                                                            <span class="estimate-package-title">The Signature Detail <em>Most Popular</em></span>
+                                                            <span class="estimate-package-summary">Inside/outside glass with screens synced to the window count unless edited.</span>
+                                                        </span>
+                                                    </label>
+                                                    <label class="estimate-package-option" for="package_deluxe">
+                                                        <input type="radio" id="package_deluxe" name="package_level_res" value="deluxe" />
+                                                        <span class="estimate-package-card">
+                                                            <span class="estimate-package-title">The Deluxe Home Detail</span>
+                                                            <span class="estimate-package-summary">Inside/outside glass with screens and tracks synced to the window count unless edited.</span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </fieldset>
+
+                                            <div id="residential-window-fields">
+                                                <div class="detail-grid">
+                                                    <div class="form-field">
+                                                        <label class="form-label" for="service_level">Service level</label>
+                                                        <select id="service_level" class="form-input">
+                                                            <option value="both" selected>Inside + outside</option>
+                                                            <option value="ext">Exterior only</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-field">
+                                                        <label class="form-label" for="glass_condition">Glass
+                                                            condition</label>
+                                                        <select id="glass_condition" class="form-input">
+                                                            <option value="normal" selected>Light / normal</option>
+                                                            <option value="moderate">Moderate buildup</option>
+                                                            <option value="heavy">Heavy buildup</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="window-count-grid">
+                                                    <div class="count-card">
+                                                        <label class="form-label" for="count_double_hung">Double-hung
+                                                            windows</label>
+                                                        <input type="number" id="count_double_hung" class="form-input"
+                                                            min="0" max="999" step="1" inputmode="numeric" value="0" />
+                                                        <span id="price_double_hung" class="inline-price">$0.00 each</span>
+                                                    </div>
+                                                    <div class="count-card">
+                                                        <label class="form-label" for="count_casement">Casement
+                                                            windows</label>
+                                                        <input type="number" id="count_casement" class="form-input" min="0"
+                                                            max="999" step="1" inputmode="numeric" value="0" />
+                                                        <span id="price_casement" class="inline-price">$0.00 each</span>
+                                                    </div>
+                                                    <div class="count-card">
+                                                        <label class="form-label" for="count_picture">Picture
+                                                            windows</label>
+                                                        <input type="number" id="count_picture" class="form-input" min="0"
+                                                            max="999" step="1" inputmode="numeric" value="0" />
+                                                        <span id="price_picture" class="inline-price">$0.00 each</span>
+                                                    </div>
+                                                    <div class="count-card">
+                                                        <label class="form-label" for="count_storm">Storm windows</label>
+                                                        <input type="number" id="count_storm" class="form-input" min="0"
+                                                            max="999" step="1" inputmode="numeric" value="0" />
+                                                        <span id="price_storm" class="inline-price">$0.00 each</span>
+                                                    </div>
+                                                    <div id="count_skylight_wrap" class="count-card">
+                                                        <label class="form-label" for="count_skylight">Skylights</label>
+                                                        <input type="number" id="count_skylight" class="form-input" min="0"
+                                                            max="999" step="1" inputmode="numeric" value="0" />
+                                                        <span id="price_skylight" class="inline-price">$0.00 each</span>
+                                                    </div>
+                                                    <div class="count-card">
+                                                        <label class="form-label" for="screens">Screens</label>
+                                                        <input type="number" id="screens" class="form-input" min="0"
+                                                            max="999" step="1" inputmode="numeric" value="0" />
+                                                        <span id="price_screens" class="inline-price">$0.00 each</span>
+                                                    </div>
+                                                    <div class="count-card">
+                                                        <label class="form-label" for="tracks">Tracks</label>
+                                                        <input type="number" id="tracks" class="form-input" min="0"
+                                                            max="999" step="1" inputmode="numeric" value="0" />
+                                                        <span id="price_tracks" class="inline-price">$0.00 each</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="commercial-window-fields" hidden>
+                                                <p class="commercial-review-note">Choose the commercial scope that best matches the property so we can price storefront and low-rise work instantly and route complex access or post-construction jobs for review.</p>
+                                                <div class="detail-grid commercial-field-grid">
+                                                    <div class="form-field">
+                                                        <label class="form-label" for="commercial_frequency">Service frequency <span class="req">*</span></label>
+                                                        <select id="commercial_frequency" class="form-input" aria-describedby="error_commercial_frequency">
+                                                            <option value="">Select one</option>
+                                                            <option value="one_time">One-time cleaning</option>
+                                                            <option value="weekly">Weekly</option>
+                                                            <option value="biweekly">Bi-weekly</option>
+                                                            <option value="monthly">Monthly</option>
+                                                            <option value="quarterly">Quarterly</option>
+                                                            <option value="semi_annual">Semi-annual</option>
+                                                            <option value="annual">Annual</option>
+                                                            <option value="not_sure">Not sure yet</option>
+                                                        </select>
+                                                        <span id="error_commercial_frequency" class="field-error" data-error-for="commercial_frequency" hidden>Please choose a service frequency.</span>
+                                                    </div>
+                                                    <div class="form-field">
+                                                        <label class="form-label" for="commercial_glass_quantity_mode">Glass quantity method <span class="req">*</span></label>
+                                                        <select id="commercial_glass_quantity_mode" class="form-input" aria-describedby="error_commercial_glass_quantity_mode">
+                                                            <option value="">Select one</option>
+                                                            <option value="pane_count">Count panes / sections</option>
+                                                            <option value="sqft_range">Use a glass size range</option>
+                                                            <option value="photos_only">Estimate from uploaded photos</option>
+                                                            <option value="not_sure">Not sure yet</option>
+                                                        </select>
+                                                        <span id="error_commercial_glass_quantity_mode" class="field-error" data-error-for="commercial_glass_quantity_mode" hidden>Please choose how you want to estimate the glass quantity.</span>
+                                                    </div>
+                                                    <div class="form-field">
+                                                        <label class="form-label" for="commercial_service_level">Service level</label>
+                                                        <select id="commercial_service_level" class="form-input">
+                                                            <option value="ext" selected>Exterior only</option>
+                                                            <option value="both">Inside + outside</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-field">
+                                                    <label class="form-label" for="commercial_access_notes">Access notes <span class="req">*</span></label>
+                                                    <textarea id="commercial_access_notes" class="form-input" rows="3" aria-describedby="error_commercial_access_notes" placeholder="Tell us about landscaping, parked cars, locked courtyards, public sidewalks, or anything else that affects access."></textarea>
+                                                    <span id="error_commercial_access_notes" class="field-error" data-error-for="commercial_access_notes" hidden>High-access jobs require access notes before we can review the estimate.</span>
+                                                </div>
+                                                <div id="commercial-scope-storefront-fields" class="commercial-scope-fields">
+                                                    <div class="detail-grid commercial-field-grid">
+                                                        <div class="form-field">
+                                                            <label class="form-label" for="commercial_window_count">Glass panes / sections</label>
+                                                            <input type="number" id="commercial_window_count" class="form-input" min="0" max="9999" step="1" inputmode="numeric" value="0" aria-describedby="error_commercial_window_count" />
+                                                            <span id="error_commercial_window_count" class="field-error" data-error-for="commercial_window_count" hidden>Please enter a valid pane or section count.</span>
+                                                        </div>
+                                                        <div class="form-field">
+                                                            <label class="form-label" for="commercial_doors">Entry doors</label>
+                                                            <input type="number" id="commercial_doors" class="form-input" min="0" max="9999" step="1" inputmode="numeric" value="0" />
+                                                        </div>
+                                                    </div>
+                                                    <fieldset class="estimate-package-fieldset">
+                                                        <legend>Storefront notes</legend>
+                                                        <div class="checkbox-stack">
+                                                            <label class="check-item" for="commercial_public_access_constraints">
+                                                                <input type="checkbox" id="commercial_public_access_constraints" />
+                                                                <span>
+                                                                    <strong>Public sidewalk or entry constraints</strong>
+                                                                    <span class="check-help">Use this when foot traffic, shared entrances, or public access timing needs to be considered.</span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </fieldset>
+                                                </div>
+                                                <div id="commercial-scope-low-rise-fields" class="commercial-scope-fields" hidden>
+                                                    <div class="detail-grid commercial-field-grid">
+                                                        <div class="form-field">
+                                                            <label class="form-label" for="commercial_glass_sqft_range">Glass size range</label>
+                                                            <select id="commercial_glass_sqft_range" class="form-input" aria-describedby="error_commercial_glass_sqft_range">
+                                                                <option value="">Select one</option>
+                                                                <option value="under_1000">Under 1,000 sq ft</option>
+                                                                <option value="sqft_1000_3000">1,000-3,000 sq ft</option>
+                                                                <option value="sqft_3000_7500">3,000-7,500 sq ft</option>
+                                                                <option value="over_7500">Over 7,500 sq ft</option>
+                                                            </select>
+                                                            <span id="error_commercial_glass_sqft_range" class="field-error" data-error-for="commercial_glass_sqft_range" hidden>Please select a glass size range or upload photos for review.</span>
+                                                        </div>
+                                                        <div class="form-field">
+                                                            <label class="form-label" for="commercial_low_rise_stories">Stories</label>
+                                                            <select id="commercial_low_rise_stories" class="form-input">
+                                                                <option value="">Select one</option>
+                                                                <option value="1">1 story</option>
+                                                                <option value="2">2 stories</option>
+                                                                <option value="3">3 stories</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <fieldset class="estimate-package-fieldset">
+                                                        <legend>Low-rise access details</legend>
+                                                        <div class="checkbox-stack">
+                                                            <label class="check-item" for="commercial_water_fed_pole_possible">
+                                                                <input type="checkbox" id="commercial_water_fed_pole_possible" />
+                                                                <span>
+                                                                    <strong>Water-fed pole access is possible</strong>
+                                                                    <span class="check-help">Use this when exterior glass can be reached safely from the ground or roofline without lifts.</span>
+                                                                </span>
+                                                            </label>
+                                                            <label class="check-item" for="commercial_obstructions_present">
+                                                                <input type="checkbox" id="commercial_obstructions_present" />
+                                                                <span>
+                                                                    <strong>Obstructions are present</strong>
+                                                                    <span class="check-help">Mark this when landscaping, parked cars, awnings, or locked areas complicate access.</span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </fieldset>
+                                                </div>
+                                                <div id="commercial-scope-high-rise-fields" class="commercial-scope-fields" hidden>
+                                                    <div class="form-field">
+                                                        <label class="form-label" for="commercial_high_rise_stories">Stories</label>
+                                                        <select id="commercial_high_rise_stories" class="form-input">
+                                                            <option value="">Select one</option>
+                                                            <option value="2">2 stories</option>
+                                                            <option value="3">3 stories</option>
+                                                            <option value="4_plus">4+ stories</option>
+                                                        </select>
+                                                    </div>
+                                                    <fieldset class="estimate-package-fieldset">
+                                                        <legend>High-access review details</legend>
+                                                        <div class="checkbox-stack">
+                                                            <label class="check-item" for="commercial_lift_required">
+                                                                <input type="checkbox" id="commercial_lift_required" />
+                                                                <span><strong>Lift required</strong></span>
+                                                            </label>
+                                                            <label class="check-item" for="commercial_rope_access_possible">
+                                                                <input type="checkbox" id="commercial_rope_access_possible" />
+                                                                <span><strong>Rope access possible</strong></span>
+                                                            </label>
+                                                            <label class="check-item" for="commercial_roof_access_available">
+                                                                <input type="checkbox" id="commercial_roof_access_available" />
+                                                                <span><strong>Roof access available</strong></span>
+                                                            </label>
+                                                            <label class="check-item" for="commercial_anchor_points_known">
+                                                                <input type="checkbox" id="commercial_anchor_points_known" />
+                                                                <span><strong>Anchor points known</strong></span>
+                                                            </label>
+                                                            <label class="check-item" for="commercial_coi_required">
+                                                                <input type="checkbox" id="commercial_coi_required" />
+                                                                <span><strong>Certificate of insurance required</strong></span>
+                                                            </label>
+                                                            <label class="check-item" for="commercial_site_walk_required">
+                                                                <input type="checkbox" id="commercial_site_walk_required" />
+                                                                <span><strong>Site walk required</strong></span>
+                                                            </label>
+                                                        </div>
+                                                    </fieldset>
+                                                </div>
+                                                <div id="commercial-scope-post-construction-fields" class="commercial-scope-fields" hidden>
+                                                    <fieldset class="estimate-package-fieldset">
+                                                        <legend>Post-construction conditions</legend>
+                                                        <div class="checkbox-stack">
+                                                            <label class="check-item" for="commercial_debris_paint_overspray">
+                                                                <input type="checkbox" id="commercial_debris_paint_overspray" />
+                                                                <span><strong>Paint overspray</strong></span>
+                                                            </label>
+                                                            <label class="check-item" for="commercial_debris_concrete_dust">
+                                                                <input type="checkbox" id="commercial_debris_concrete_dust" />
+                                                                <span><strong>Concrete dust</strong></span>
+                                                            </label>
+                                                            <label class="check-item" for="commercial_debris_adhesive_stickers">
+                                                                <input type="checkbox" id="commercial_debris_adhesive_stickers" />
+                                                                <span><strong>Adhesive, stickers, or labels</strong></span>
+                                                            </label>
+                                                            <label class="check-item" for="commercial_tempered_glass_ack">
+                                                                <input type="checkbox" id="commercial_tempered_glass_ack" />
+                                                                <span>
+                                                                    <strong>Tempered glass warning acknowledged</strong>
+                                                                    <span class="check-help">Post-construction cleanup may require special review to avoid glass-scraping risk.</span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </fieldset>
+                                                    <div class="form-field">
+                                                        <label class="form-label" for="commercial_turnover_date">Deadline or turnover date</label>
+                                                        <input type="date" id="commercial_turnover_date" class="form-input" />
+                                                    </div>
+                                                </div>
+                                                <span id="commercial-quantity-error" class="group-error" role="alert" aria-live="assertive"></span>
+                                                <span id="commercial-post-construction-error" class="group-error" role="alert" aria-live="assertive"></span>
+                                            </div>
+
+                                            <span id="window-scope-error" class="group-error" role="alert" aria-live="assertive"></span>
+                                        </div>
+
+                                        <div id="pressure-details-panel" class="detail-card" hidden>
+                                            <h3>Pressure washing details</h3>
+                                            <p>Add the walls, storefront faces, or sections you want cleaned so the
+                                                estimate reflects the full scope.</p>
+                                            <div class="form-field">
+                                                <span class="label-with-info">
+                                                    <label class="form-label" for="pressure_walls">Walls or sections</label>
+                                                    <button type="button" class="info-trigger" aria-label="Pressure washing walls help" aria-expanded="false" data-info-text="Most single-story homes use 3-4 sides. Choose fewer for spot work.">?</button>
+                                                </span>
+                                                <select id="pressure_walls" class="form-input" aria-describedby="error_pressure_walls">
+                                                    <option value="2">1–2 sides</option>
+                                                    <option value="4" selected>3–4 sides (most homes)</option>
+                                                    <option value="6">Full exterior / large property</option>
+                                                </select>
+                                                <span id="error_pressure_walls" class="field-error" data-error-for="pressure_walls" hidden>Please select the number of sides for pressure washing.</span>
+                                            </div>
+                                        </div>
+
+                                        <div id="gutter-details-panel" class="detail-card" hidden>
+                                            <h3>Gutter cleaning details</h3>
+                                            <p>Add the wall-length runs or gutter sections you want cleaned so pricing
+                                                matches the property correctly.</p>
+                                            <div class="form-field">
+                                                <label class="form-label" for="gutter_walls">Wall-length runs</label>
+                                                <select id="gutter_walls" class="form-input" aria-describedby="error_gutter_walls">
+                                                    <option value="4" selected>Standard home (4 runs)</option>
+                                                    <option value="6">Large home or L-shape (6 runs)</option>
+                                                    <option value="8">Very large / complex roofline (8 runs)</option>
+                                                </select>
+                                                <span id="error_gutter_walls" class="field-error" data-error-for="gutter_walls" hidden>Please select the number of gutter runs.</span>
+                                            </div>
+                                        </div>
+
+                                        <div id="caulk-details-panel" class="detail-card" hidden>
+                                            <h3>Caulking / sealing details</h3>
+                                            <p id="caulk-panel-copy">We review sealing needs and provide custom pricing
+                                                based on scope, access, and materials.</p>
+                                        </div>
+
+                                        <div id="commercial-pressure-panel" class="detail-card commercial-only" hidden>
+                                            <h3>Commercial pressure washing details</h3>
+                                            <p>Commercial pressure washing is reviewed manually in this estimator pass so we can confirm surfaces, dimensions, access, and operating constraints.</p>
+                                            <div class="form-field">
+                                                <label class="form-label" for="commercial_pressure_areas_to_clean">Areas to clean <span class="req">*</span></label>
+                                                <textarea id="commercial_pressure_areas_to_clean" class="form-input" rows="3" aria-describedby="error_commercial_pressure_areas_to_clean" placeholder="Examples: front sidewalk, dumpster pad, drive-thru lane, storefront facade, patio, loading dock."></textarea>
+                                                <span id="error_commercial_pressure_areas_to_clean" class="field-error" data-error-for="commercial_pressure_areas_to_clean" hidden>Please describe the commercial pressure washing areas.</span>
+                                            </div>
+                                            <div class="detail-grid commercial-field-grid">
+                                                <div class="form-field">
+                                                    <label class="form-label" for="commercial_pressure_dimensions">Approximate dimensions</label>
+                                                    <input type="text" id="commercial_pressure_dimensions" class="form-input" placeholder="Approx. sq ft, linear ft, or count of areas" />
+                                                </div>
+                                                <div class="form-field">
+                                                    <label class="form-label" for="commercial_pressure_surface_type">Surface type <span class="req">*</span></label>
+                                                    <select id="commercial_pressure_surface_type" class="form-input" aria-describedby="error_commercial_pressure_surface_type">
+                                                        <option value="">Select one</option>
+                                                        <option value="concrete">Concrete</option>
+                                                        <option value="brick">Brick</option>
+                                                        <option value="siding">Siding</option>
+                                                        <option value="stone">Stone</option>
+                                                        <option value="wood_composite">Wood / composite</option>
+                                                        <option value="mixed">Mixed surfaces</option>
+                                                        <option value="not_sure">Not sure</option>
+                                                    </select>
+                                                    <span id="error_commercial_pressure_surface_type" class="field-error" data-error-for="commercial_pressure_surface_type" hidden>Please choose the surface type.</span>
+                                                </div>
+                                                <div class="form-field">
+                                                    <label class="form-label" for="commercial_pressure_condition">Surface condition</label>
+                                                    <select id="commercial_pressure_condition" class="form-input">
+                                                        <option value="">No selection</option>
+                                                        <option value="light">Light buildup</option>
+                                                        <option value="moderate">Moderate buildup</option>
+                                                        <option value="heavy">Heavy buildup</option>
+                                                        <option value="oil_grease">Oil / grease present</option>
+                                                        <option value="gum">Gum removal needed</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-field">
+                                                    <label class="form-label" for="commercial_pressure_access_constraints">Access constraints</label>
+                                                    <input type="text" id="commercial_pressure_access_constraints" class="form-input" placeholder="Traffic, locked gates, parking, water access, etc." />
+                                                </div>
+                                            </div>
+                                            <div class="form-field">
+                                                <label class="form-label" for="commercial_pressure_operating_constraints">Pressure washing operating constraints</label>
+                                                <textarea id="commercial_pressure_operating_constraints" class="form-input" rows="3" placeholder="Share timing, tenant, public access, or noise constraints specific to pressure washing."></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div id="commercial-gutter-panel" class="detail-card commercial-only" hidden>
+                                            <h3>Commercial gutter cleaning details</h3>
+                                            <p>Commercial gutter service is reviewed manually so roofline access, safety, and debris conditions can be confirmed.</p>
+                                            <div class="detail-grid commercial-field-grid">
+                                                <div class="form-field">
+                                                    <label class="form-label" for="commercial_gutter_building_height">Building height <span class="req">*</span></label>
+                                                    <select id="commercial_gutter_building_height" class="form-input" aria-describedby="error_commercial_gutter_building_height">
+                                                        <option value="">Select one</option>
+                                                        <option value="1_story">1 story</option>
+                                                        <option value="2_story">2 stories</option>
+                                                        <option value="3_story">3 stories</option>
+                                                        <option value="4_plus">4+ stories</option>
+                                                        <option value="not_sure">Not sure</option>
+                                                    </select>
+                                                    <span id="error_commercial_gutter_building_height" class="field-error" data-error-for="commercial_gutter_building_height" hidden>Please choose the building height.</span>
+                                                </div>
+                                                <div class="form-field">
+                                                    <label class="form-label" for="commercial_gutter_guards">Gutter guards</label>
+                                                    <select id="commercial_gutter_guards" class="form-input">
+                                                        <option value="">No selection</option>
+                                                        <option value="yes">Yes</option>
+                                                        <option value="no">No</option>
+                                                        <option value="not_sure">Not sure</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-field">
+                                                    <label class="form-label" for="commercial_gutter_debris_level">Debris level <span class="req">*</span></label>
+                                                    <select id="commercial_gutter_debris_level" class="form-input" aria-describedby="error_commercial_gutter_debris_level">
+                                                        <option value="">Select one</option>
+                                                        <option value="light">Light</option>
+                                                        <option value="moderate">Moderate</option>
+                                                        <option value="heavy">Heavy</option>
+                                                        <option value="blocked_overflowing">Blocked / overflowing</option>
+                                                        <option value="not_sure">Not sure</option>
+                                                    </select>
+                                                    <span id="error_commercial_gutter_debris_level" class="field-error" data-error-for="commercial_gutter_debris_level" hidden>Please choose the debris level.</span>
+                                                </div>
+                                                <div class="form-field">
+                                                    <label class="form-label" for="commercial_gutter_roof_safety">Roof safety notes</label>
+                                                    <input type="text" id="commercial_gutter_roof_safety" class="form-input" placeholder="Roof pitch, ladder setup, roof access, fall protection, etc." />
+                                                </div>
+                                            </div>
+                                            <div class="form-field">
+                                                <label class="form-label" for="commercial_gutter_access_concerns">Access concerns</label>
+                                                <textarea id="commercial_gutter_access_concerns" class="form-input" rows="3" placeholder="Share locked gates, landscaping, parking, tenant areas, or roofline concerns."></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div id="commercial-caulk-panel" class="detail-card commercial-only" hidden>
+                                            <h3>Commercial caulking / sealing details</h3>
+                                            <p>Commercial sealing work is reviewed manually so we can confirm location, material, access, and the type of failure before pricing.</p>
+                                            <div class="detail-grid commercial-field-grid">
+                                                <div class="form-field">
+                                                    <label class="form-label" for="commercial_caulk_location">Location needing sealing <span class="req">*</span></label>
+                                                    <input type="text" id="commercial_caulk_location" class="form-input" aria-describedby="error_commercial_caulk_location" placeholder="Windows, doors, storefront joints, penetrations, etc." />
+                                                    <span id="error_commercial_caulk_location" class="field-error" data-error-for="commercial_caulk_location" hidden>Please describe where sealing is needed.</span>
+                                                </div>
+                                                <div class="form-field">
+                                                    <label class="form-label" for="commercial_caulk_surface_material">Surface material</label>
+                                                    <input type="text" id="commercial_caulk_surface_material" class="form-input" placeholder="Glass, aluminum, brick, concrete, siding, mixed, etc." />
+                                                </div>
+                                                <div class="form-field">
+                                                    <label class="form-label" for="commercial_caulk_issue_type">Issue type <span class="req">*</span></label>
+                                                    <select id="commercial_caulk_issue_type" class="form-input" aria-describedby="error_commercial_caulk_issue_type">
+                                                        <option value="">Select one</option>
+                                                        <option value="failed_caulk">Failed / cracked caulk</option>
+                                                        <option value="water_intrusion">Water intrusion</option>
+                                                        <option value="draft_gap">Draft or visible gap</option>
+                                                        <option value="preventive_reseal">Preventive reseal</option>
+                                                        <option value="not_sure">Not sure</option>
+                                                    </select>
+                                                    <span id="error_commercial_caulk_issue_type" class="field-error" data-error-for="commercial_caulk_issue_type" hidden>Please choose the sealing issue type.</span>
+                                                </div>
+                                                <div class="form-field">
+                                                    <label class="form-label" for="commercial_caulk_access_notes">Access notes</label>
+                                                    <input type="text" id="commercial_caulk_access_notes" class="form-input" placeholder="Ground level, ladder, lift, tenant spaces, etc." />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="review-request-panel" class="detail-card" hidden>
+                                            <h3>Not sure / Need review</h3>
+                                            <p>Tell us what you are seeing, and upload photos below if you can. If this is the only selected service, add a short description or at least one photo so we have enough context to follow up.</p>
+                                            <div class="form-field">
+                                                <label class="form-label" for="review_request_description">What should we review?</label>
+                                                <textarea id="review_request_description" class="form-input" rows="4" aria-describedby="error_review_request_description" placeholder="Describe the issue, surface, location, access, or goal. Photos can be uploaded in the shared section below."></textarea>
+                                                <span id="error_review_request_description" class="field-error" data-error-for="review_request_description" hidden>Please add a short description or upload at least one photo.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="estimate-panel" aria-labelledby="estimate-step-contact">
+                            <span class="estimate-kicker">Step 4</span>
+                            <h3 id="estimate-step-contact" class="step-title">Where are we working, and how do we reach you?</h3>
+                            <p class="step-subtitle">Drop your details below and we'll follow up to confirm everything — usually same day.</p>
+
+                            <div class="detail-grid">
+                                <div class="form-field">
+                                    <label id="contact_name_label" class="form-label" for="contact_name">Your name <span
+                                            class="req">*</span></label>
+                                    <input type="text" id="contact_name" class="form-input" autocomplete="name"
+                                        autocapitalize="words" enterkeyhint="next" required
+                                        aria-describedby="error_contact_name" />
+                                    <span id="error_contact_name" class="field-error" data-error-for="contact_name" hidden>Please enter your
+                                        name.</span>
+                                </div>
+                                <div id="business_name_field" class="form-field" hidden>
+                                    <label class="form-label" for="business_name">Business / property name <span class="req">*</span></label>
+                                    <input type="text" id="business_name" class="form-input" autocomplete="organization"
+                                        autocapitalize="words" enterkeyhint="next" />
+                                    <span id="error_business_name" class="field-error" data-error-for="business_name" hidden>Please enter the business or property name.</span>
+                                </div>
+                                <div class="form-field">
+                                    <label class="form-label" for="phone">Phone number</label>
+                                    <input type="tel" id="phone" class="form-input" autocomplete="tel" inputmode="tel"
+                                        enterkeyhint="next" placeholder="(555) 010-0000"
+                                        aria-describedby="error_phone" />
+                                    <span id="error_phone" class="field-error" data-error-for="phone" hidden>Please provide a phone
+                                        number or email address.</span>
+                                </div>
+                                <div class="form-field">
+                                    <label class="form-label" for="email">Email address</label>
+                                    <input type="email" id="email" class="form-input" autocomplete="email"
+                                        inputmode="email" autocapitalize="off" spellcheck="false" enterkeyhint="next"
+                                        aria-describedby="error_email" />
+                                    <span id="error_email" class="field-error" data-error-for="email" hidden>Please provide an email
+                                        address or phone number.</span>
+                                </div>
+                            </div>
+
+                            <div class="form-field">
+                                <label class="form-label" for="address_line1">Service address <span class="req">*</span></label>
+                                <input type="text" id="address_line1" class="form-input" autocomplete="street-address"
+                                    autocapitalize="words" enterkeyhint="next" required list="estimate-address-suggestions"
+                                    aria-describedby="error_address_line1" />
+                                <datalist id="estimate-address-suggestions"></datalist>
+                                <span id="error_address_line1" class="field-error" data-error-for="address_line1" hidden>Please enter the service address.</span>
+                                <p class="address-helper">Start typing and choose a suggestion when available. If you type the address manually, we will preserve the full text for follow-up.</p>
+                            </div>
+                            <div class="address-grid hidden-address-grid" hidden aria-hidden="true">
+                                <div class="form-field">
+                                    <label class="form-label" for="city">City <span class="req">*</span></label>
+                                    <input type="text" id="city" class="form-input" autocomplete="address-level2"
+                                        autocapitalize="words" enterkeyhint="next" required
+                                        aria-describedby="error_city" />
+                                    <span id="error_city" class="field-error" data-error-for="city" hidden>Please enter the city.</span>
+                                </div>
+                                <div class="form-field">
+                                    <label class="form-label" for="state">State <span class="req">*</span></label>
+                                    <input type="text" id="state" class="form-input" autocomplete="address-level1"
+                                        autocapitalize="characters" spellcheck="false" maxlength="2" placeholder="WI"
+                                        enterkeyhint="next" required aria-describedby="error_state" />
+                                    <span id="error_state" class="field-error" data-error-for="state" hidden>Please enter the 2-letter state.</span>
+                                </div>
+                                <div class="form-field">
+                                    <label class="form-label" for="zip">ZIP code <span class="req">*</span></label>
+                                    <input type="text" id="zip" class="form-input" autocomplete="postal-code"
+                                        inputmode="numeric" maxlength="10" placeholder="53221" enterkeyhint="next"
+                                        required aria-describedby="error_zip" />
+                                    <span id="error_zip" class="field-error" data-error-for="zip" hidden>Please enter a valid ZIP code.</span>
+                                </div>
+                            </div>
+
+                            <div class="detail-grid estimate-secondary-fields" hidden>
+                                <div class="form-field">
+                                    <label class="form-label" for="preferred_contact_method">How should I reach
+                                        you?</label>
+                                    <select id="preferred_contact_method" class="form-input">
+                                        <option value="">No preference</option>
+                                        <option value="Phone call">Phone call</option>
+                                        <option value="Text message">Text message</option>
+                                        <option value="Either call or text">Either call or text</option>
+                                        <option value="Email">Email</option>
+                                    </select>
+                                </div>
+                                <div class="form-field">
+                                    <label class="form-label" for="best_time">Best time to reach you</label>
+                                    <select id="best_time" class="form-input">
+                                        <option value="">Any time</option>
+                                        <option value="Morning">Morning</option>
+                                        <option value="Midday">Midday</option>
+                                        <option value="Afternoon">Afternoon</option>
+                                        <option value="Evening">Evening</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-field">
+                                <label class="form-label" for="notes">Anything else I should know? (Notes)</label>
+                                <textarea id="notes" class="form-input" rows="5" enterkeyhint="done"
+                                    placeholder="Got a tricky side gate? Certain spots that need extra attention? Just let me know here."></textarea>
+                            </div>
+
+                            <div class="form-field snapshot-upload">
+                                <label class="form-label" for="snapshot_photos">Snapshot estimate photos <span>(optional)</span></label>
+                                <input type="file" id="snapshot_photos" class="form-input" accept="image/*" multiple />
+                                <p id="snapshot_photo_status">Attach up to 3 quick photos for a faster review. If hard water, paint, debris, skylights, or access issues affect the job, we will confirm that directly before final pricing.</p>
+                            </div>
+
+                            <div class="privacy-box">
+                                We aim to make this process as straightforward as possible. Please let us know which areas of your property require attention, and we will prepare a clear, customized plan for you. Your privacy is important to us, and your information will remain secure.
+                            </div>
+
+                            <div class="form-field">
+                                <label class="check-item consent-row" for="consent">
+                                    <input type="checkbox" id="consent" aria-required="true"
+                                        aria-describedby="error_consent" />
+                                    <span>I consent to FieldOps Demo contacting me regarding this estimate request.
+                                        <span class="req">*</span></span>
+                                </label>
+                                <span id="error_consent" class="field-error" data-error-for="consent" hidden>Please confirm that we may
+                                    contact you about the estimate.</span>
+                            </div>
+
+                            <div class="step-nav">
+                                <button type="button" id="reset-form-btn" class="btn btn-secondary">Reset Form</button>
+                                <button type="submit" class="btn btn-primary">View My Estimate</button>
+                            </div>
+                            <p id="estimate-submit-feedback" class="form-rate-limit-msg estimate-submit-feedback" hidden></p>
+                        </section>
+                    </form>
+
+                    <aside id="estimate-cart" class="estimate-request-cart" aria-label="Estimate summary">
+                        <div class="cart-card">
+                            <div class="cart-head">
+                                <div>
+                                    <span class="estimate-kicker">Estimate Summary</span>
+                                    <h3 class="step-title">Subtotal</h3>
+                                </div>
+                                <div class="cart-total-wrap">
+                                    <span class="cart-total-label">Estimated total</span>
+                                    <strong id="cart-total" class="cart-total">$0.00</strong>
+                                </div>
+                            </div>
+
+                            <p id="cart-description" class="cart-description" aria-live="polite">Add your services to see your subtotal here.</p>
+                            <div id="cart-list" class="cart-list" aria-live="polite"></div>
+
+                            <div class="cart-footer">
+                                <div class="cart-total-wrap">
+                                    <span class="cart-total-label">Total Estimate</span>
+                                    <strong id="cart-footer-total" class="cart-total">$0.00</strong>
+                                </div>
+                                <p id="cart-minimum-note" class="cart-minimum-note" hidden>The service minimum was
+                                    applied to this estimate.</p>
+                                <p class="cart-caption">Once you have your estimate, ask us about maintenance options — no contract required.</p>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div id="estimate-receipt" class="form-ms estimate-receipt" hidden tabindex="-1">
+                    <div class="estimate-panel">
+                        <span class="estimate-kicker">Request Submitted</span>
+                        <h3 class="step-title">Thank you — we will be in touch soon.</h3>
+                        <p class="step-subtitle">Your estimate request has been sent to our team. We will review your
+                            details and respond within 24–48 hours.</p>
+                        <div id="receipt-send-error" class="receipt-send-error" hidden>
+                            <p>We were unable to deliver your request automatically. Please call or text us at
+                                <a href="tel:+15550100000">(555) 010-0000</a> or email
+                                <a href="mailto:hello@example.invalid">hello@example.invalid</a>
+                                and we will be happy to assist you directly.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="estimate-panel">
+                        <div class="receipt-grid">
+                            <section class="receipt-card">
+                                <h3>Service details</h3>
+                                <ul id="receipt-request" class="receipt-list"></ul>
+                            </section>
+                            <section class="receipt-card">
+                                <h3>Your contact details</h3>
+                                <ul id="receipt-contact" class="receipt-list"></ul>
+                            </section>
+                            <section class="receipt-card receipt-card-wide">
+                                <h3>Pricing summary</h3>
+                                <ul id="receipt-estimate" class="receipt-list"></ul>
+                            </section>
+                        </div>
+                        <div class="receipt-actions">
+                            <button type="button" id="estimate-reset" class="btn btn-primary">Build Another
+                                Estimate</button>
+                            <a class="btn btn-secondary" href="tel:+15550100000">Call instead</a>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="estimate-trust-footer accent-gradient-panel" aria-label="Estimate reassurance">
+                    <span class="guarantee-badge">No-Hassle 48-Hour Re-Clean Guarantee</span>
+                    <p class="trust-quote">"FieldOps Demo shows how a service business can present clear pricing, fast follow-up, and a cleaner scheduling workflow."</p>
+                    <p>Transparent pricing, no hidden fees, and same-day follow-up whenever possible.</p>
+                </aside>
+            </section>
+
+            <section id="commercial-pricing" class="section commercial-answer-blocks">
+                <div class="contact-intro">
+                    <h2>How much does commercial window cleaning cost in Milwaukee?</h2>
+                    <p>Commercial window cleaning pricing depends on building size, glass quantity, access difficulty, soil level, and service frequency. Ground-level storefronts can often be priced quickly, while low-rise, high-access, and post-construction projects may require a site review before final pricing.</p>
+                </div>
+            </section>
+
+            <section id="demo-contact" class="section">
+                <div class="contact-intro">
+                    <h2>Prefer to speak with us directly?</h2>
+                    <p>You are welcome to call or text us instead of completing the form. Our team is happy to answer your questions and help determine the best approach for your property.</p>
+                </div>
+                <div class="form-ms">
+                    <div class="estimate-panel">
+                        <div class="cta-row" style="justify-content:center;">
+                            <a class="btn btn-primary" href="tel:+15550100000">Call or Text: (555) 010-0000</a>
+                            <a class="btn estimate-outline-btn" href="mailto:hello@example.invalid">Email Us</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section terms">
+                <h2>Terms of Service</h2>
+                <p class="lead">These terms outline the services provided by <strong>FieldOps Demo</strong>. By scheduling a service, you agree to the following provisions.</p>
+                <details>
+                    <summary>Read Full Terms of Service</summary>
+                    <div class="terms-body">
+                        <p><strong>1. Estimates &amp; Pricing:</strong> Our estimates are based on initial visible conditions. If we encounter unexpected changes in the scope of the project (such as severe hard water staining, heavy buildup, or unforeseen access limitations), we will pause work and consult with you. We will never apply additional charges without your explicit approval.</p>
+                        <p><strong>2. Property Condition:</strong> While we take great care in our work, we cannot assume liability for pre-existing damage or wear. This includes compromised window seals, brittle insect screens, corroded frames, or previously weakened glass, which may occasionally fail during standard cleaning procedures.</p>
+                        <p><strong>3. Liability:</strong> We stand behind our workmanship. Our liability covers direct damage caused by our services, up to the limits of our general liability insurance policy. We cannot accept responsibility for indirect losses, such as operational disruptions or lost revenue.</p>
+                        <p><strong>4. Payment:</strong> Payment is due upon completion of the service, unless prior commercial net terms have been agreed upon in writing. If you have any concerns regarding the completed work, please notify us within <strong>48 hours</strong> so we have the opportunity to address and resolve the issue.</p>
+                        <p><strong>5. Acceptance:</strong> Scheduling service or authorizing work to begin constitutes agreement to these terms.</p>
+                    </div>
+                </details>
+            </section>
+
+      
+                <p><strong>FieldOps Demo</strong><br />Serving Kenosha to Waukesha, including Milwaukee
+                    &amp; Surrounding Areas</p>
+                <p><a href="tel:+15550100000">(555) 010-0000</a><br /><a
+                        href="mailto:hello@example.invalid">hello@example.invalid</a></p>
+                <p style="font-size:12px; margin-top: 20px;">&copy; 2026 FieldOps Demo. All rights
+                    reserved.</p>
+            </footer>
+        </div>
+    </main>
+
+    <div id="sticky-cart-bar" class="sticky-cart-bar" aria-live="polite">
+        <div>
+            <span class="sticky-cart-label">Estimated total</span>
+            <strong id="sticky-cart-total" class="sticky-cart-total">$0.00</strong>
+        </div>
+        <div class="sticky-cart-contact" aria-label="Quick contact actions">
+            <a href="tel:+15550100000">Call</a>
+            <a href="sms:+15550100000">Text</a>
+        </div>
+        <button type="button" id="sticky-cart-button" class="btn btn-primary sticky-cart-btn">View cart</button>
+    </div>
+
+    <script src="../js/nav.js"></script>
+    <script src="../js/submission-payload.js"></script>
+    <script src="../js/estimate-request.js"></script>
+    <script>
+    window.CCS_MODAL_SERVICES = [
+      { id: 'service_windows',  label: 'Window Cleaning',                 detail: 'windows'  },
+      { id: 'service_pressure', label: 'Pressure Washing / Soft Washing', detail: 'pressure' },
+      { id: 'service_gutter',   label: 'Gutter Cleaning',                 detail: 'gutter'   },
+      { id: 'service_caulk',    label: 'Caulking / Sealing',              detail: 'caulk'    }
+    ];
+    </script>
+    <script src="../js/modal-estimate.js"></script>
+	<script src="../js/service-areas.js?v=2"></script>
+
+  <!-- Full Estimate Request Modal -->
+  <div
+    id="orderModal"
+    class="modal-overlay"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="orderModalTitle"
+    aria-describedby="orderModalDescription"
+    hidden
+  >
+    <div class="modal-content modal-content-lg">
+      <button class="modal-close" id="orderClose" type="button" aria-label="Close estimate form">&times;</button>
+      <div id="orderFormWrap">
+        <h2 class="modal-title" id="orderModalTitle">Request a Free Estimate</h2>
+        <p class="modal-subtitle">Tell us what you need and we'll get back to you with a quote — usually same day.</p>
+        <p class="sr-only" id="orderModalDescription">Estimate request form with service details, contact preferences, and preferred appointment time.</p>
+        <form id="orderForm" method="post" action="/api/intake" novalidate>
+          <div id="orderFormError" class="form-error-summary" role="alert" aria-live="assertive" hidden></div>
+          <fieldset class="detail-section">
+            <legend>What service do you need?</legend>
+            <div id="orderServiceList" class="service-checklist" role="group" aria-describedby="orderServiceList_error"></div>
+            <p id="orderServiceList_error" class="field-error group-error" hidden></p>
+          </fieldset>
+          <fieldset class="detail-section">
+            <legend>Your contact info</legend>
+            <div class="detail-row">
+              <label class="detail-label req" for="ord_name">Name</label>
+              <input class="form-input modal-input" type="text" id="ord_name" name="name" autocomplete="name" required />
+            </div>
+            <div class="detail-row">
+              <label class="detail-label" for="ord_phone">Phone</label>
+              <input class="form-input modal-input" type="tel" id="ord_phone" name="phone" autocomplete="tel" />
+            </div>
+            <div class="detail-row">
+              <label class="detail-label" for="ord_email">Email</label>
+              <input class="form-input modal-input" type="email" id="ord_email" name="email" autocomplete="email" />
+            </div>
+            <p class="field-error" id="ord_contact_error" hidden></p>
+            <div class="detail-row">
+              <label class="detail-label" for="ord_notes">Anything else we should know?</label>
+              <textarea class="form-input modal-input" id="ord_notes" name="notes" rows="2" style="resize:vertical;"></textarea>
+            </div>
+          </fieldset>
+          <fieldset class="detail-section">
+            <legend>Do you have a day in mind? <span style="font-weight:400;font-size:0.9em;">(Totally optional)</span></legend>
+            <div class="calendar-container" id="orderCalendar"></div>
+          </fieldset>
+          <button type="submit" class="btn btn-primary" style="width:100%;margin-top:16px;" id="orderSubmitBtn">
+            Get My Fast Quote
+          </button>
+          <p class="trust-sentence">By submitting, I agree FieldOps Demo may contact me by call or text about this request. Free estimate, no obligation.</p>
+        </form>
+      </div>
+      <div id="orderSuccess" class="modal-success" hidden>
+        <div class="form-success-icon">&#10003;</div>
+        <h3>Request received!</h3>
+        <p>We'll review your request and reach out within one business day with your free estimate.</p>
+        <button class="btn btn-primary" id="orderDoneBtn" type="button">Close</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

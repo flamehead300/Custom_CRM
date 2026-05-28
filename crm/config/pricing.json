@@ -1,0 +1,93 @@
+{
+  "minimumCharge": 100,
+  "serviceLevelMultipliers": {
+    "both": 1,
+    "ext": 0.6
+  },
+  "propertyTypes": {
+    "res": {
+      "windows": {
+        "doubleHung": 10,
+        "casement": 8,
+        "picture": 8.5,
+        "storm": 15,
+        "skylight": 20
+      },
+      "extras": {
+        "screens": 2.5,
+        "tracks": 3,
+        "upperFloorAccess": 45
+      }
+    },
+    "com": {
+      "windows": {
+        "doubleHung": 8,
+        "casement": 7,
+        "picture": 8,
+        "storm": 20,
+        "skylight": 55
+      },
+      "extras": {
+        "screens": 5,
+        "tracks": 2,
+        "upperFloorAccess": 50
+      }
+    }
+  },
+  "addons": {
+    "pressure": {
+      "rate": 75
+    },
+    "gutter": {
+      "rate": 50,
+      "multiplier": 1
+    },
+    "caulk": {
+      "rate": 250,
+      "mode": "per-hour"
+    }
+  },
+  "adjustments": {
+    "hardWater": {
+      "multiplier": 1.25
+    },
+    "paintDebris": {
+      "flat": 15
+    },
+    "ladderWork": {
+      "flat": 50
+    },
+    "manualSkylightCleaning": {
+      "flat": 50
+    },
+    "lightFixture": {
+      "flat": 15
+    }
+  },
+  "commercialFrequencyMatrix": {
+    "extMultiplier": 0.6,
+    "storefrontMultiplier": 1,
+    "rows": [
+      {
+        "label": "Monthly",
+        "multiplier": 0.90
+      },
+      {
+        "label": "Quarterly",
+        "multiplier": 0.93
+      },
+      {
+        "label": "Triannually",
+        "multiplier": 0.95
+      },
+      {
+        "label": "Biannually",
+        "multiplier": 0.97
+      },
+      {
+        "label": "Annually",
+        "multiplier": 1.00
+      }
+    ]
+  }
+}
